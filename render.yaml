@@ -1,6 +1,8 @@
 services:
   - type: worker
     name: telegram-bot
+    environment: python
+    plan: free
     runtime: python
     branch: main
     buildCommand: "pip install -r requirements.txt"
